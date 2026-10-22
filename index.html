@@ -44,12 +44,6 @@
     display:flex;align-items:center;gap:12px;margin-block-end:20px}
   .eyebrow::after{content:"";flex:1;max-width:120px;height:1px;background:var(--line-2)}
   h1{font-size:clamp(30px,5.2vw,58px);font-weight:700;line-height:1.3;letter-spacing:-.02em;max-width:18ch}
-  .lede{margin-block-start:22px;font-size:clamp(15px,1.4vw,18.5px);color:var(--ink-2);max-width:62ch}
-  .lede strong{color:var(--ink);font-weight:600}
-  .howto{margin-block-start:26px;display:flex;flex-wrap:wrap;gap:10px}
-  .howto li{display:flex;align-items:baseline;gap:9px;font-size:13.5px;color:var(--ink-2);
-    background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
-  .howto b{color:var(--accent);font-weight:600}
 
   /* ------------------------------------------------------------- grid */
   .grid{
@@ -101,19 +95,11 @@
   .btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
 
   /* ------------------------------------------------------------ footer */
-  .note{
-    border-block-start:1px solid var(--line);padding-block:clamp(28px,4vw,48px);
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
-    gap:clamp(20px,3vw,46px);
-  }
-  .note h2{font-size:17px;font-weight:600;margin-block-end:10px}
-  .note p{font-size:14px;color:var(--ink-2)}
   .foot{border-block-start:1px solid var(--line);padding-block:26px;font-size:12.5px;color:var(--ink-3)}
 
   @media (max-width:560px){
     .actions{flex-direction:column;align-items:stretch}
     .btn,.btn-ghost{flex:none;width:100%}
-    .howto li{width:100%}
   }
 </style>
 </head>
@@ -125,16 +111,6 @@
   <div class="wrap">
     <p class="eyebrow">مقترحات تصميم — مراجعة العميل</p>
     <h1>مقترحات تصميم موقع الشركة</h1>
-    <p class="lede">
-      أمامك <strong>عشرة مقترحات مختلفة</strong> لشكل الموقع. كل مقترح تصوّر كامل لصفحة رئيسية —
-      بألوانه وخطوطه وطريقته في عرض المشروعات. افتح ما يلفت نظرك، تصفّحه كما لو كان موقعاً حقيقياً،
-      ثم أخبرنا بالتصاميم التي أعجبتك وبما تحبّ تغييره.
-    </p>
-    <ul class="howto">
-      <li><b>١.</b> اضغط «عرض التصميم» لفتح المقترح في نافذة جديدة</li>
-      <li><b>٢.</b> مرّر لأسفل داخل الصفحة لرؤية كل الأقسام</li>
-      <li><b>٣.</b> أرسل لنا <b>رمز</b> التصميم الذي اخترته — مثل «F» أو «A2»</li>
-    </ul>
   </div>
 </header>
 
@@ -316,22 +292,6 @@
   </div>
 </main>
 
-<section class="wrap">
-  <div class="note">
-    <div>
-      <h2>المحتوى داخل التصاميم</h2>
-      <p>الاسم والنصوص والمشروعات والأرقام والصور المعروضة داخل كل تصميم توضيحية فقط، الغرض منها إظهار الشكل النهائي. ستُستبدل كلها ببيانات الشركة وصورها الفعلية.</p>
-    </div>
-    <div>
-      <h2>اللغة</h2>
-      <p>كل التصاميم تبدأ بالعربية من اليمين إلى اليسار، وفيها زر للتبديل إلى الإنجليزية. جرّب التبديل داخل أي تصميم لترى شكل النسختين.</p>
-    </div>
-    <div>
-      <h2>كيف ترسل رأيك</h2>
-      <p>اكتب لنا رموز التصاميم التي أعجبتك مرتّبة حسب تفضيلك، مع أي ملاحظة على الألوان أو الخطوط أو ترتيب الأقسام. يمكنك اختيار أكثر من تصميم ودمج ما يعجبك منها.</p>
-    </div>
-  </div>
-</section>
 
 <footer class="wrap">
   <p class="foot">مقترحات تصميم لموقع الشركة · ١٠ تصاميم للمراجعة · ٢٠٢٦</p>
