@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#f7f6f2">
+<title>مقترحات تصميم موقع الشركة</title>
+<meta name="description" content="عشرة مقترحات لتصميم موقع الشركة. استعرض كل تصميم واختر ما يناسبك.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' fill='%231b4332'/%3E%3Cpath d='M7 36V18L22 7l15 11v18h-9V23h-12v13H7Z' fill='none' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#f7f6f2; --card:#ffffff; --ink:#1b1f1c; --ink-2:#5c6560; --ink-3:#8b938d;
+    --line:#e2e0d8; --line-2:#cfccc1; --accent:#1b4332; --accent-2:#2d6a4f;
+    --gutter:clamp(18px,4vw,64px); --maxw:1360px;
+    --ease:cubic-bezier(.2,.8,.25,1);
+    --ff:'IBM Plex Sans Arabic',-apple-system,'Segoe UI',Tahoma,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--ff);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit;text-decoration:none}
+  p,h1,h2,h3{margin:0}
+  ul{margin:0;padding:0;list-style:none}
+  :focus-visible{outline:3px solid var(--accent-2);outline-offset:3px;border-radius:2px}
+
+  .skip{position:fixed;inset-block-start:-100px;inset-inline-start:16px;z-index:99;
+    background:var(--accent);color:#fff;padding:12px 20px;transition:inset-block-start .25s var(--ease)}
+  .skip:focus{inset-block-start:16px}
+
+  .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+
+  /* ---------------------------------------------------------- masthead */
+  .masthead{padding-block:clamp(44px,7vw,92px) clamp(28px,4vw,48px);border-block-end:1px solid var(--line)}
+  .eyebrow{font-size:12.5px;font-weight:600;color:var(--accent-2);letter-spacing:.02em;
+    display:flex;align-items:center;gap:12px;margin-block-end:20px}
+  .eyebrow::after{content:"";flex:1;max-width:120px;height:1px;background:var(--line-2)}
+  h1{font-size:clamp(30px,5.2vw,58px);font-weight:700;line-height:1.3;letter-spacing:-.02em;max-width:18ch}
+  .lede{margin-block-start:22px;font-size:clamp(15px,1.4vw,18.5px);color:var(--ink-2);max-width:62ch}
+  .lede strong{color:var(--ink);font-weight:600}
+  .howto{margin-block-start:26px;display:flex;flex-wrap:wrap;gap:10px}
+  .howto li{display:flex;align-items:baseline;gap:9px;font-size:13.5px;color:var(--ink-2);
+    background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+  .howto b{color:var(--accent);font-weight:600}
+
+  /* ------------------------------------------------------------- grid */
+  .grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));
+    gap:clamp(20px,2.6vw,34px);
+    padding-block:clamp(34px,5vw,60px);
+  }
+
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:4px;overflow:hidden;
+    display:flex;flex-direction:column;
+    transition:border-color .3s var(--ease),box-shadow .3s var(--ease),transform .3s var(--ease);
+  }
+  .card:hover{border-color:var(--line-2);box-shadow:0 18px 44px -28px rgba(27,31,28,.45);transform:translateY(-3px)}
+
+  .shot{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;background:#eceae3;
+    border-block-end:1px solid var(--line)}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;
+    transition:transform 1s var(--ease)}
+  .card:hover .shot img{transform:scale(1.03)}
+  .ref{
+    position:absolute;inset-block-start:0;inset-inline-start:0;z-index:2;
+    background:var(--ink);color:#fff;font-size:12.5px;font-weight:600;letter-spacing:.06em;
+    padding:7px 13px;font-variant-numeric:tabular-nums;
+  }
+
+  .body{padding:clamp(18px,2vw,26px);display:flex;flex-direction:column;flex:1;gap:12px}
+  .name{font-size:clamp(20px,1.9vw,25px);font-weight:700;line-height:1.35;letter-spacing:-.01em}
+  .desc{font-size:14.5px;color:var(--ink-2);line-height:1.9}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-block-start:2px}
+  .tags span{font-size:12px;color:var(--ink-3);border:1px solid var(--line);border-radius:999px;padding:4px 11px}
+
+  .actions{margin-block-start:auto;padding-block-start:16px;border-block-start:1px solid var(--line);
+    display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;flex:1;justify-content:center;
+    background:var(--accent);color:#fff;border:1px solid var(--accent);
+    font-size:15px;font-weight:600;padding:14px 22px;min-height:48px;border-radius:3px;
+    transition:background .25s var(--ease),gap .25s var(--ease);
+  }
+  .btn:hover{background:var(--accent-2);gap:16px}
+  .btn .arr{font-size:13px;transform:scaleX(-1)}
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:8px;justify-content:center;
+    border:1px solid var(--line-2);color:var(--ink-2);font-size:13.5px;
+    padding:13px 16px;min-height:48px;border-radius:3px;white-space:nowrap;
+    transition:border-color .25s var(--ease),color .25s var(--ease);
+  }
+  .btn-ghost:hover{border-color:var(--ink);color:var(--ink)}
+
+  /* ------------------------------------------------------------ footer */
+  .note{
+    border-block-start:1px solid var(--line);padding-block:clamp(28px,4vw,48px);
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
+    gap:clamp(20px,3vw,46px);
+  }
+  .note h2{font-size:17px;font-weight:600;margin-block-end:10px}
+  .note p{font-size:14px;color:var(--ink-2)}
+  .foot{border-block-start:1px solid var(--line);padding-block:26px;font-size:12.5px;color:var(--ink-3)}
+
+  @media (max-width:560px){
+    .actions{flex-direction:column;align-items:stretch}
+    .btn,.btn-ghost{flex:none;width:100%}
+    .howto li{width:100%}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#designs">انتقل إلى التصاميم</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">مقترحات تصميم — مراجعة العميل</p>
+    <h1>مقترحات تصميم موقع الشركة</h1>
+    <p class="lede">
+      أمامك <strong>عشرة مقترحات مختلفة</strong> لشكل الموقع. كل مقترح تصوّر كامل لصفحة رئيسية —
+      بألوانه وخطوطه وطريقته في عرض المشروعات. افتح ما يلفت نظرك، تصفّحه كما لو كان موقعاً حقيقياً،
+      ثم أخبرنا بالتصاميم التي أعجبتك وبما تحبّ تغييره.
+    </p>
+    <ul class="howto">
+      <li><b>١.</b> اضغط «عرض التصميم» لفتح المقترح في نافذة جديدة</li>
+      <li><b>٢.</b> مرّر لأسفل داخل الصفحة لرؤية كل الأقسام</li>
+      <li><b>٣.</b> أرسل لنا <b>رمز</b> التصميم الذي اخترته — مثل «F» أو «A2»</li>
+    </ul>
+  </div>
+</header>
+
+<main id="designs">
+  <div class="wrap">
+    <ul class="grid">
+
+      <li class="card">
+        <a class="shot" href="designs/v1/direction-a.html" target="_blank" rel="noopener" aria-label="عرض التصميم A1 — الطابع المؤسسي">
+          <span class="ref">A1</span>
+          <img src="assets/shots/a1-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم A1: واجهة بصورة من موقع العمل وعنوان عربي كبير على خلفية كحلية.">
+        </a>
+        <div class="body">
+          <h2 class="name">الطابع المؤسسي</h2>
+          <p class="desc">ألوان كحلية هادئة ولمسات ذهبية، مع صور من موقع العمل. يقدّم الشركة بثقة ووقار، ويبرز سنوات الخبرة والأرقام في مقدمة الصفحة.</p>
+          <div class="tags"><span>كحلي وذهبي</span><span>رسمي</span><span>يُبرز الخبرة</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v1/direction-a.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/a1-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v1/direction-b.html" target="_blank" rel="noopener" aria-label="عرض التصميم B1 — الهدوء التحريري">
+          <span class="ref">B1</span>
+          <img src="assets/shots/b1-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم B1: خلفية فاتحة ومساحات واسعة مع صورة لأبراج زجاجية.">
+        </a>
+        <div class="body">
+          <h2 class="name">الهدوء التحريري</h2>
+          <p class="desc">خلفية فاتحة ومساحات بيضاء واسعة وخطوط رفيعة. أقرب إلى مجلة معمارية: يترك الصور والنصوص تتنفّس بدل ازدحام الصفحة.</p>
+          <div class="tags"><span>فاتح وهادئ</span><span>أنيق</span><span>مساحات واسعة</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v1/direction-b.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/b1-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v1/direction-c.html" target="_blank" rel="noopener" aria-label="عرض التصميم C1 — المباشر والعملي">
+          <span class="ref">C1</span>
+          <img src="assets/shots/c1-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم C1: عنوان عربي كبير بجانب صورة مؤطّرة لمبنى.">
+        </a>
+        <div class="body">
+          <h2 class="name">المباشر والعملي</h2>
+          <p class="desc">يبدأ برسالة الشركة ثم ينتقل سريعاً إلى المشروعات. مناسب لمن يريد أن يصل الزائر إلى الأعمال والتواصل بأقل عدد من الخطوات.</p>
+          <div class="tags"><span>واضح</span><span>سريع الوصول</span><span>عملي</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v1/direction-c.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/c1-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v2/direction-a.html" target="_blank" rel="noopener" aria-label="عرض التصميم A2 — السينمائي الدافئ">
+          <span class="ref">A2</span>
+          <img src="assets/shots/a2-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم A2: صورة غروب كبيرة لموقع إنشاءات تملأ الشاشة مع عنوان عربي.">
+        </a>
+        <div class="body">
+          <h2 class="name">السينمائي الدافئ</h2>
+          <p class="desc">صورة كبيرة بضوء الغروب تملأ الشاشة، وعناوين واسعة تتحرّك بهدوء. يعطي إحساساً بالحجم والطموح من أول نظرة.</p>
+          <div class="tags"><span>دافئ</span><span>صور كبيرة</span><span>مؤثّر</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v2/direction-a.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/a2-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v2/direction-b.html" target="_blank" rel="noopener" aria-label="عرض التصميم B2 — الدقة المعمارية">
+          <span class="ref">B2</span>
+          <img src="assets/shots/b2-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم B2: خلفية عاجية وخطوط رفيعة مع صورة لمبنى حجري.">
+        </a>
+        <div class="body">
+          <h2 class="name">الدقة المعمارية</h2>
+          <p class="desc">ورق عاجي وخطوط قياس دقيقة وتكوين غير متماثل. يركّز على الحرفية والتفاصيل، ويعطي انطباعاً بشركة تهتم بالجودة قبل الحجم.</p>
+          <div class="tags"><span>عاجي وأخضر</span><span>دقيق</span><span>حِرَفي</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v2/direction-b.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/b2-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v2/direction-c.html" target="_blank" rel="noopener" aria-label="عرض التصميم C2 — الجرأة اللونية">
+          <span class="ref">C2</span>
+          <img src="assets/shots/c2-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم C2: خلفية خضراء لافتة مع أشكال هندسية وعنوان عربي كبير.">
+        </a>
+        <div class="body">
+          <h2 class="name">الجرأة اللونية</h2>
+          <p class="desc">لون أخضر لافت وأشكال هندسية متحركة. هوية معاصرة وجريئة تبقى في الذاكرة وتميّز الشركة عن المنافسين بوضوح.</p>
+          <div class="tags"><span>أخضر جريء</span><span>معاصر</span><span>مميّز</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v2/direction-c.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/c2-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v3/d-blueprint/index.html" target="_blank" rel="noopener" aria-label="عرض التصميم D — المخطط الهندسي">
+          <span class="ref">D</span>
+          <img src="assets/shots/d-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم D: خلفية زرقاء داكنة بشبكة رسم هندسي ورسم خطي لمبنى.">
+        </a>
+        <div class="body">
+          <h2 class="name">المخطط الهندسي</h2>
+          <p class="desc">يحاكي لوحة رسم هندسي: شبكة قياس، ورسم للمبنى يُرسم أمام الزائر. يعرض بيانات كل مشروع بوضوح شديد — الدور والمساحة والمدة والحالة.</p>
+          <div class="tags"><span>أزرق هندسي</span><span>تقني</span><span>غني بالبيانات</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v3/d-blueprint/index.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/d-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v3/e-cinematic/index.html" target="_blank" rel="noopener" aria-label="عرض التصميم E — الفصول السينمائية">
+          <span class="ref">E</span>
+          <img src="assets/shots/e-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم E: خلفية داكنة وصورة غروب كبيرة لبرج قيد الإنشاء.">
+        </a>
+        <div class="body">
+          <h2 class="name">الفصول السينمائية</h2>
+          <p class="desc">خلفية داكنة وصور كبيرة تتبدّل كالمشاهد أثناء التمرير، وكل مشروع يأخذ شاشة كاملة. الأقوى في إبراز جمال المشروعات.</p>
+          <div class="tags"><span>داكن ودافئ</span><span>سينمائي</span><span>يُبرز الصور</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v3/e-cinematic/index.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/e-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v3/f-archive/index.html" target="_blank" rel="noopener" aria-label="عرض التصميم F — الشبكة التحريرية">
+          <span class="ref">F</span>
+          <img src="assets/shots/f-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم F: صفحة بيضاء بخطوط شبكة ظاهرة وعنوان عربي كبير بكلمة واحدة ملوّنة.">
+        </a>
+        <div class="body">
+          <h2 class="name">الشبكة التحريرية</h2>
+          <p class="desc">ورق أبيض وخطوط شبكة ظاهرة ولون واحد مميّز يُستخدم بحساب. الأوضح في القراءة، والأسهل في تصفّح قائمة الأعمال ومعرفة تفاصيل كل مشروع.</p>
+          <div class="tags"><span>أبيض ونظيف</span><span>سهل القراءة</span><span>منظّم</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v3/f-archive/index.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/f-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="card">
+        <a class="shot" href="designs/v3/g-lattice/index.html" target="_blank" rel="noopener" aria-label="عرض التصميم G — الهيكل الصناعي">
+          <span class="ref">G</span>
+          <img src="assets/shots/g-desktop.webp" width="1200" height="750" loading="lazy" decoding="async"
+               alt="لقطة من التصميم G: ألوان خرسانة مع عنوان عربي ثقيل بلون برتقالي وصورة لهيكل حديدي.">
+        </a>
+        <div class="body">
+          <h2 class="name">الهيكل الصناعي</h2>
+          <p class="desc">ألوان خرسانة وبرتقالي السلامة وهيكل حديدي في الخلفية. يعطي إحساساً بالقوة وقدرة التنفيذ — الأنسب للمشروعات الصناعية والبنية التحتية.</p>
+          <div class="tags"><span>خرساني وبرتقالي</span><span>قوي</span><span>صناعي</span></div>
+          <div class="actions">
+            <a class="btn" href="designs/v3/g-lattice/index.html" target="_blank" rel="noopener">عرض التصميم <span class="arr" aria-hidden="true">←</span></a>
+            <a class="btn-ghost" href="assets/shots/g-mobile.webp" target="_blank" rel="noopener">شكل الجوال</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</main>
+
+<section class="wrap">
+  <div class="note">
+    <div>
+      <h2>المحتوى داخل التصاميم</h2>
+      <p>الاسم والنصوص والمشروعات والأرقام والصور المعروضة داخل كل تصميم توضيحية فقط، الغرض منها إظهار الشكل النهائي. ستُستبدل كلها ببيانات الشركة وصورها الفعلية.</p>
+    </div>
+    <div>
+      <h2>اللغة</h2>
+      <p>كل التصاميم تبدأ بالعربية من اليمين إلى اليسار، وفيها زر للتبديل إلى الإنجليزية. جرّب التبديل داخل أي تصميم لترى شكل النسختين.</p>
+    </div>
+    <div>
+      <h2>كيف ترسل رأيك</h2>
+      <p>اكتب لنا رموز التصاميم التي أعجبتك مرتّبة حسب تفضيلك، مع أي ملاحظة على الألوان أو الخطوط أو ترتيب الأقسام. يمكنك اختيار أكثر من تصميم ودمج ما يعجبك منها.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p class="foot">مقترحات تصميم لموقع الشركة · ١٠ تصاميم للمراجعة · ٢٠٢٦</p>
+</footer>
+
+</body>
+</html>

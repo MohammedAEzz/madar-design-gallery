@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#faf9f7">
+<meta name="description" content="اتجاه تصميمي تجريبي (و) لشركة إنشاءات خيالية — شبكة تحريرية منضبطة على ورق فاتح.">
+<title>F — The Measure | MADAR DEMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' fill='%231b4332'/%3E%3Cpath d='M7 36V18L22 7l15 11v18h-9V23h-12v13H7Z' fill='none' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="../shared/core.js" defer></script>
+<script src="motion.js" defer></script>
+</head>
+<body class="dir-f">
+
+<a class="skip" href="#main"><span data-ar="تخطَّ إلى المحتوى" data-en="Skip to content">تخطَّ إلى المحتوى</span></a>
+
+<!-- The grid is the background. Twelve hairlines, drawn once on load. -->
+<div class="grid-lines" aria-hidden="true">
+  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+
+<p class="demo-strip">
+  <span data-ar="نموذج تصميمي • شركة خيالية • الصور مولّدة والمشروعات والأرقام افتراضية" data-en="DESIGN PROTOTYPE • FICTIONAL COMPANY • GENERATED IMAGERY, ILLUSTRATIVE PROJECTS &amp; FIGURES">نموذج تصميمي • شركة خيالية • الصور مولّدة والمشروعات والأرقام افتراضية</span>
+</p>
+
+<header class="hdr" data-header>
+  <a class="brand" href="../../../index.html">
+    <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+      <path d="M3 40V17L22 3L41 17V40H29V23H15V40H3Z" stroke="currentColor" stroke-width="2.2"/>
+      <path d="M3 17H41M22 3V14" stroke="currentColor" stroke-width="2.2"/>
+    </svg>
+    <span class="brand-text">
+      <strong data-ar="مَدار" data-en="MADAR">مَدار</strong>
+      <small data-ar="التجريبية للإنشاءات" data-en="DEMONSTRATION CONSTRUCTION">التجريبية للإنشاءات</small>
+    </span>
+  </a>
+  <nav class="hdr-nav" data-label-ar="التنقل الرئيسي" data-label-en="Main navigation" aria-label="التنقل الرئيسي">
+    <a href="#index"><span data-ar="فهرس الأعمال" data-en="Index of works">فهرس الأعمال</span></a>
+    <a href="#sectors"><span data-ar="القطاعات" data-en="Sectors">القطاعات</span></a>
+    <a href="#capabilities"><span data-ar="القدرات" data-en="Capabilities">القدرات</span></a>
+    <a href="#standards"><span data-ar="المعايير" data-en="Standards">المعايير</span></a>
+    <a href="#contact"><span data-ar="تواصل" data-en="Contact">تواصل</span></a>
+  </nav>
+  <div class="hdr-tools">
+    <button class="tool" type="button" data-language lang="en">EN</button>
+    <button class="tool tool-icon" type="button" data-motion-toggle aria-pressed="false" aria-label="إيقاف الحركة" title="إيقاف الحركة"><span data-motion-glyph aria-hidden="true">❙❙</span></button>
+    <button class="tool tool-menu" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-panel">
+      <span data-ar="القائمة" data-en="Menu">القائمة</span>
+      <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<dialog class="menu" id="menu-panel" data-label-ar="قائمة التنقل" data-label-en="Navigation menu" aria-label="قائمة التنقل">
+  <div class="menu-head">
+    <span class="label">MADAR / <span data-ar="فهرس" data-en="CONTENTS">فهرس</span></span>
+    <button class="tool" type="button" data-menu-close><span data-ar="إغلاق" data-en="Close">إغلاق</span> <span aria-hidden="true">✕</span></button>
+  </div>
+  <nav class="menu-list">
+    <a href="#main"><span class="label" aria-hidden="true">A</span><span data-ar="الغلاف" data-en="Cover">الغلاف</span></a>
+    <a href="#colophon"><span class="label" aria-hidden="true">B</span><span data-ar="بيانات الشركة" data-en="Colophon">بيانات الشركة</span></a>
+    <a href="#index"><span class="label" aria-hidden="true">C</span><span data-ar="فهرس الأعمال" data-en="Index of works">فهرس الأعمال</span></a>
+    <a href="#sectors"><span class="label" aria-hidden="true">D</span><span data-ar="القطاعات" data-en="Sectors">القطاعات</span></a>
+    <a href="#capabilities"><span class="label" aria-hidden="true">E</span><span data-ar="القدرات" data-en="Capabilities">القدرات</span></a>
+    <a href="#standards"><span class="label" aria-hidden="true">F</span><span data-ar="المعايير" data-en="Standards">المعايير</span></a>
+    <a href="#contact"><span class="label" aria-hidden="true">G</span><span data-ar="تواصل" data-en="Contact">تواصل</span></a>
+  </nav>
+  <div class="menu-foot">
+    <p class="label" dir="ltr">MADAR DEMO · EXPLORATION V.03 · DIRECTION F</p>
+    <a class="label" href="../../../index.html"><span data-ar="العودة إلى كل التصاميم" data-en="Back to all designs">العودة إلى كل التصاميم</span> ↗</a>
+  </div>
+</dialog>
+
+<main id="main">
+
+  <!-- =============================================== A — cover type ===== -->
+  <section class="cover">
+    <p class="label cover-mark">
+      <span data-ar="مقاول عام" data-en="General contractor">مقاول عام</span>
+      <i aria-hidden="true"></i>
+      <span dir="ltr">EGYPT · EST. 2008 (DEMO)</span>
+    </p>
+    <h1>
+      <span class="ln"><span data-ar="نقيس أولاً." data-en="We measure">نقيس أولاً.</span></span>
+      <span class="ln"><span data-ar="ثم نلتزم بما" data-en="first. Then we">ثم نلتزم بما</span></span>
+      <span class="ln"><span data-ar="قسناه" data-en="honour what we">قسناه</span> <em class="accent" data-ar="بالضبط." data-en="measured.">بالضبط.</em></span>
+    </h1>
+    <div class="cover-foot">
+      <p class="cover-lede" data-ar="مبانٍ، صناعة، وبنية تحتية في مصر. نطاق مكتوب، برنامج واقعي، وتسليم موثّق — بلا مبالغات." data-en="Buildings, industry and infrastructure in Egypt. A written scope, a realistic programme and a documented handover — without overstatement.">مبانٍ، صناعة، وبنية تحتية في مصر. نطاق مكتوب، برنامج واقعي، وتسليم موثّق — بلا مبالغات.</p>
+      <a class="arrow-link" href="#index"><span data-ar="فهرس الأعمال" data-en="Index of works">فهرس الأعمال</span><i aria-hidden="true">↓</i></a>
+    </div>
+
+    <!-- The slit: a wide crop that opens from a hairline to a full band. -->
+    <figure class="slit">
+      <picture>
+        <source media="(max-width:760px)" srcset="../shared/img/arch-wide-sm.webp">
+        <img src="../shared/img/arch-wide.webp" width="1600" height="574" fetchpriority="high"
+             alt="تصوّر معماري مولّد لمبنى حجري، وليس مشروعاً حقيقياً"
+             data-alt-ar="تصوّر معماري مولّد لمبنى حجري، وليس مشروعاً حقيقياً"
+             data-alt-en="Generated architectural concept of a stone building, not a real project">
+      </picture>
+      <figcaption class="label">
+        <span data-ar="صورة مولّدة لأغراض التصميم" data-en="GENERATED IMAGE, FOR DESIGN PURPOSES">صورة مولّدة لأغراض التصميم</span>
+        <span dir="ltr">PL. 01</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ================================================= B — colophon ===== -->
+  <section class="colophon" id="colophon">
+    <h2 class="sr-only" data-ar="بيانات الشركة" data-en="Company colophon">بيانات الشركة</h2>
+    <div class="colophon-note" data-reveal>
+      <p data-ar="مَدار التجريبية شركة خيالية أُنشئت لاستكشاف تجربة موقع مقاولات مصري. كل الأرقام والمشروعات أدناه افتراضية وليست سجلاً فعلياً لأي شركة." data-en="Madar Demo is a fictional company created to explore the experience of an Egyptian contractor’s website. Every figure and project below is illustrative and is not an actual record of any company.">مَدار التجريبية شركة خيالية أُنشئت لاستكشاف تجربة موقع مقاولات مصري. كل الأرقام والمشروعات أدناه افتراضية وليست سجلاً فعلياً لأي شركة.</p>
+    </div>
+    <dl class="colophon-table" data-reveal-group>
+      <div data-reveal>
+        <dt class="label"><span data-ar="سنوات العمل" data-en="Years active">سنوات العمل</span></dt>
+        <dd><b data-count="18" dir="ltr">18</b><span data-ar="عاماً — رقم افتراضي" data-en="years — illustrative">عاماً — رقم افتراضي</span></dd>
+      </div>
+      <div data-reveal>
+        <dt class="label"><span data-ar="مشروعات مسجّلة" data-en="Projects logged">مشروعات مسجّلة</span></dt>
+        <dd><b data-count="42" dir="ltr">42</b><span data-ar="مشروعاً — رقم افتراضي" data-en="projects — illustrative">مشروعاً — رقم افتراضي</span></dd>
+      </div>
+      <div data-reveal>
+        <dt class="label"><span data-ar="قطاعات العمل" data-en="Sectors">قطاعات العمل</span></dt>
+        <dd><b data-count="3" dir="ltr">3</b><span data-ar="مبانٍ، صناعة، بنية تحتية" data-en="buildings, industry, infrastructure">مبانٍ، صناعة، بنية تحتية</span></dd>
+      </div>
+      <div data-reveal>
+        <dt class="label"><span data-ar="مقر العمل" data-en="Base">مقر العمل</span></dt>
+        <dd><b class="b-text" data-ar="مصر" data-en="Egypt">مصر</b><span data-ar="تُستكمل بيانات المكتب لاحقاً" data-en="office details to follow">تُستكمل بيانات المكتب لاحقاً</span></dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ============================================ C — index of works ===== -->
+  <section class="works" id="index">
+    <div class="sec-head">
+      <p class="label sec-mark"><i aria-hidden="true"></i><span data-ar="ج — فهرس الأعمال" data-en="C — INDEX OF WORKS">ج — فهرس الأعمال</span></p>
+      <h2 data-reveal data-ar="ثلاثة أعمال، مرتّبة كما يُرتَّب الأرشيف." data-en="Three works, ordered the way an archive is ordered.">ثلاثة أعمال، مرتّبة كما يُرتَّب الأرشيف.</h2>
+      <div class="works-tools">
+        <div class="filters" role="group" data-label-ar="تصفية المشروعات" data-label-en="Filter projects" aria-label="تصفية المشروعات">
+          <button type="button" data-filter="all" aria-pressed="true"><span data-ar="الكل" data-en="All">الكل</span></button>
+          <button type="button" data-filter="buildings" aria-pressed="false"><span data-ar="مبانٍ" data-en="Buildings">مبانٍ</span></button>
+          <button type="button" data-filter="industrial" aria-pressed="false"><span data-ar="صناعة" data-en="Industrial">صناعة</span></button>
+          <button type="button" data-filter="infrastructure" aria-pressed="false"><span data-ar="بنية تحتية" data-en="Infrastructure">بنية تحتية</span></button>
+        </div>
+        <p class="label" data-result-count aria-live="polite"></p>
+      </div>
+    </div>
+
+    <!-- A cursor-following plate; decorative only, hidden on touch. -->
+    <div class="float-plate" data-float aria-hidden="true">
+      <img src="../shared/img/arch-square-sm.webp" width="495" height="495" alt="" data-float-img="buildings">
+      <img src="../shared/img/ind-square-sm.webp" width="495" height="495" alt="" data-float-img="industrial">
+      <img src="../shared/img/site-square-sm.webp" width="495" height="495" alt="" data-float-img="infrastructure">
+    </div>
+
+    <div class="work-list" data-reveal-group data-work-list>
+      <article class="work" data-sector="buildings" id="project-nile">
+        <h3 class="sr-only" data-ar="مجمع النيل للأعمال" data-en="Nile Business Campus">مجمع النيل للأعمال</h3>
+        <button class="work-row" type="button" aria-expanded="false" aria-controls="work-nile" data-reveal data-plate="buildings">
+          <span class="work-year label" dir="ltr">2025</span>
+          <span class="work-name" data-ar="مجمع النيل للأعمال" data-en="Nile Business Campus">مجمع النيل للأعمال</span>
+          <span class="work-sector label" data-ar="مبانٍ إدارية" data-en="Commercial buildings">مبانٍ إدارية</span>
+          <span class="work-place label" data-ar="القاهرة الجديدة" data-en="New Cairo">القاهرة الجديدة</span>
+          <span class="work-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="work-open" id="work-nile" hidden>
+          <figure class="work-plate">
+            <picture>
+              <source media="(max-width:760px)" srcset="../shared/img/arch-wide-sm.webp">
+              <img src="../shared/img/arch-wide.webp" width="1600" height="574" loading="lazy"
+                   alt="تصوّر معماري مولّد لمبنى حجري بواجهة زجاجية، وليس مشروعاً حقيقياً"
+                   data-alt-ar="تصوّر معماري مولّد لمبنى حجري بواجهة زجاجية، وليس مشروعاً حقيقياً"
+                   data-alt-en="Generated architectural concept of a stone building with a glazed volume, not a real project">
+            </picture>
+          </figure>
+          <div class="work-text">
+            <p class="work-lede" data-ar="مبنى إداري على الواجهة المائية، سُلّم على مراحل بينما استمرت التشطيبات في الأدوار العليا." data-en="A waterfront office campus, handed over in phases while finishing works continued on the floors above.">مبنى إداري على الواجهة المائية، سُلّم على مراحل بينما استمرت التشطيبات في الأدوار العليا.</p>
+            <dl class="work-facts">
+              <div><dt class="label" data-ar="الدور" data-en="Role">الدور</dt><dd data-ar="مقاول عام" data-en="Main contractor">مقاول عام</dd></div>
+              <div><dt class="label" data-ar="المساحة" data-en="Area">المساحة</dt><dd dir="ltr">18,000 m²</dd></div>
+              <div><dt class="label" data-ar="المدة" data-en="Programme">المدة</dt><dd data-ar="26 شهراً" data-en="26 months">26 شهراً</dd></div>
+              <div><dt class="label" data-ar="الحالة" data-en="Status">الحالة</dt><dd data-ar="مكتمل افتراضياً" data-en="Illustrative completion">مكتمل افتراضياً</dd></div>
+            </dl>
+            <p class="label work-note"><span data-ar="مشروع وأرقام افتراضية؛ الصورة مولّدة." data-en="FICTIONAL PROJECT AND FIGURES; IMAGE IS GENERATED.">مشروع وأرقام افتراضية؛ الصورة مولّدة.</span></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="work" data-sector="industrial" id="project-delta">
+        <h3 class="sr-only" data-ar="مركز الدلتا اللوجستي" data-en="Delta Logistics Hub">مركز الدلتا اللوجستي</h3>
+        <button class="work-row" type="button" aria-expanded="false" aria-controls="work-delta" data-reveal data-plate="industrial">
+          <span class="work-year label" dir="ltr">2026</span>
+          <span class="work-name" data-ar="مركز الدلتا اللوجستي" data-en="Delta Logistics Hub">مركز الدلتا اللوجستي</span>
+          <span class="work-sector label" data-ar="صناعة ولوجستيات" data-en="Industry &amp; logistics">صناعة ولوجستيات</span>
+          <span class="work-place label" data-ar="العاشر من رمضان" data-en="10th of Ramadan">العاشر من رمضان</span>
+          <span class="work-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="work-open" id="work-delta" hidden>
+          <figure class="work-plate">
+            <picture>
+              <source media="(max-width:760px)" srcset="../shared/img/ind-wide-sm.webp">
+              <img src="../shared/img/ind-wide.webp" width="1600" height="574" loading="lazy"
+                   alt="تصوّر مولّد لمستودع صناعي بهيكل معدني مكشوف، وليس مشروعاً حقيقياً"
+                   data-alt-ar="تصوّر مولّد لمستودع صناعي بهيكل معدني مكشوف، وليس مشروعاً حقيقياً"
+                   data-alt-en="Generated concept of an industrial warehouse with exposed steel framing, not a real project">
+            </picture>
+          </figure>
+          <div class="work-text">
+            <p class="work-lede" data-ar="بحور معدنية واسعة وأرضيات تخزين، نُفّذت قطاعاً بعد قطاع ليبدأ التشغيل مبكراً." data-en="Long steel spans and storage slabs, delivered sector by sector so operation could begin early.">بحور معدنية واسعة وأرضيات تخزين، نُفّذت قطاعاً بعد قطاع ليبدأ التشغيل مبكراً.</p>
+            <dl class="work-facts">
+              <div><dt class="label" data-ar="الدور" data-en="Role">الدور</dt><dd data-ar="تصميم وتنفيذ" data-en="Design &amp; build">تصميم وتنفيذ</dd></div>
+              <div><dt class="label" data-ar="المساحة" data-en="Area">المساحة</dt><dd dir="ltr">46,000 m²</dd></div>
+              <div><dt class="label" data-ar="البحور" data-en="Spans">البحور</dt><dd dir="ltr">32 m</dd></div>
+              <div><dt class="label" data-ar="الحالة" data-en="Status">الحالة</dt><dd data-ar="قيد التنفيذ افتراضياً" data-en="Illustratively in progress">قيد التنفيذ افتراضياً</dd></div>
+            </dl>
+            <p class="label work-note"><span data-ar="مشروع وأرقام افتراضية؛ الصورة مولّدة." data-en="FICTIONAL PROJECT AND FIGURES; IMAGE IS GENERATED.">مشروع وأرقام افتراضية؛ الصورة مولّدة.</span></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="work" data-sector="infrastructure" id="project-east">
+        <h3 class="sr-only" data-ar="شبكات شرق المدينة" data-en="East City Utilities">شبكات شرق المدينة</h3>
+        <button class="work-row" type="button" aria-expanded="false" aria-controls="work-east" data-reveal data-plate="infrastructure">
+          <span class="work-year label" dir="ltr">2024</span>
+          <span class="work-name" data-ar="شبكات شرق المدينة" data-en="East City Utilities">شبكات شرق المدينة</span>
+          <span class="work-sector label" data-ar="بنية تحتية" data-en="Infrastructure">بنية تحتية</span>
+          <span class="work-place label" data-ar="مدينة الشروق" data-en="El Shorouk">مدينة الشروق</span>
+          <span class="work-plus" aria-hidden="true">+</span>
+        </button>
+        <div class="work-open" id="work-east" hidden>
+          <figure class="work-plate">
+            <picture>
+              <source media="(max-width:760px)" srcset="../shared/img/site-wide-sm.webp">
+              <img src="../shared/img/site-wide.webp" width="1600" height="574" loading="lazy"
+                   alt="تصوّر مولّد لأعمال إنشائية عند الغروب، وليس توثيقاً لمشروع حقيقي"
+                   data-alt-ar="تصوّر مولّد لأعمال إنشائية عند الغروب، وليس توثيقاً لمشروع حقيقي"
+                   data-alt-en="Generated concept of construction works at dusk, not documentation of a real project">
+            </picture>
+          </figure>
+          <div class="work-text">
+            <p class="work-lede" data-ar="شبكات مرافق وطرق داخلية نُفّذت والحركة المرورية مفتوحة والسكان في بيوتهم." data-en="Utility networks and internal roads built with traffic open and residents still at home.">شبكات مرافق وطرق داخلية نُفّذت والحركة المرورية مفتوحة والسكان في بيوتهم.</p>
+            <dl class="work-facts">
+              <div><dt class="label" data-ar="الدور" data-en="Role">الدور</dt><dd data-ar="أعمال مدنية" data-en="Civil works">أعمال مدنية</dd></div>
+              <div><dt class="label" data-ar="الشبكات" data-en="Networks">الشبكات</dt><dd dir="ltr">14 km</dd></div>
+              <div><dt class="label" data-ar="الطرق" data-en="Roads">الطرق</dt><dd dir="ltr">6 km</dd></div>
+              <div><dt class="label" data-ar="الحالة" data-en="Status">الحالة</dt><dd data-ar="مكتمل افتراضياً" data-en="Illustrative completion">مكتمل افتراضياً</dd></div>
+            </dl>
+            <p class="label work-note"><span data-ar="مشروع وأرقام افتراضية؛ الصورة مولّدة." data-en="FICTIONAL PROJECT AND FIGURES; IMAGE IS GENERATED.">مشروع وأرقام افتراضية؛ الصورة مولّدة.</span></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================================================== D — sectors ===== -->
+  <section class="sectors" id="sectors">
+    <div class="sec-head">
+      <p class="label sec-mark"><i aria-hidden="true"></i><span data-ar="د — القطاعات" data-en="D — SECTORS">د — القطاعات</span></p>
+      <h2 data-reveal data-ar="ثلاثة قطاعات. ستّ لقطات." data-en="Three sectors. Six frames.">ثلاثة قطاعات. ستّ لقطات.</h2>
+      <p class="sec-note" data-reveal data-ar="لوحة مصغّرة بدل قائمة خدمات — طريقة سريعة لمعرفة نوع العمل الذي نقوم به. كل الصور مولّدة." data-en="A plate of frames instead of a service list — a fast way to read the kind of work we do. All images are generated.">لوحة مصغّرة بدل قائمة خدمات — طريقة سريعة لمعرفة نوع العمل الذي نقوم به. كل الصور مولّدة.</p>
+    </div>
+    <ul class="mosaic" data-reveal-group>
+      <li data-reveal><a href="#project-nile"><img src="../shared/img/arch-square-sm.webp" width="495" height="495" loading="lazy" alt="تفصيلة مولّدة لمبنى إداري" data-alt-ar="تفصيلة مولّدة لمبنى إداري" data-alt-en="Generated detail of an office building"><span class="label"><em data-ar="مبانٍ إدارية" data-en="Commercial">مبانٍ إدارية</em><i dir="ltr">01</i></span></a></li>
+      <li data-reveal><a href="#project-delta"><img src="../shared/img/ind-square-sm.webp" width="495" height="495" loading="lazy" alt="تفصيلة مولّدة لمنشأة صناعية" data-alt-ar="تفصيلة مولّدة لمنشأة صناعية" data-alt-en="Generated detail of an industrial facility"><span class="label"><em data-ar="صناعة" data-en="Industry">صناعة</em><i dir="ltr">02</i></span></a></li>
+      <li data-reveal><a href="#project-east"><img src="../shared/img/site-square-sm.webp" width="495" height="495" loading="lazy" alt="تفصيلة مولّدة لأعمال موقع" data-alt-ar="تفصيلة مولّدة لأعمال موقع" data-alt-en="Generated detail of site works"><span class="label"><em data-ar="بنية تحتية" data-en="Infrastructure">بنية تحتية</em><i dir="ltr">03</i></span></a></li>
+      <li data-reveal><a href="#capabilities"><img src="../shared/img/arch-detail-sm.webp" width="451" height="451" loading="lazy" alt="تفصيلة مولّدة لواجهة حجرية" data-alt-ar="تفصيلة مولّدة لواجهة حجرية" data-alt-en="Generated detail of a stone façade"><span class="label"><em data-ar="واجهات وتشطيبات" data-en="Façades &amp; fit-out">واجهات وتشطيبات</em><i dir="ltr">04</i></span></a></li>
+      <li data-reveal><a href="#capabilities"><img src="../shared/img/ind-detail-sm.webp" width="451" height="451" loading="lazy" alt="تفصيلة مولّدة لهيكل معدني" data-alt-ar="تفصيلة مولّدة لهيكل معدني" data-alt-en="Generated detail of steel framing"><span class="label"><em data-ar="هياكل معدنية" data-en="Steel structures">هياكل معدنية</em><i dir="ltr">05</i></span></a></li>
+      <li data-reveal><a href="#standards"><img src="../shared/img/site-detail-sm.webp" width="451" height="451" loading="lazy" alt="تفصيلة مولّدة لأعمال خرسانية" data-alt-ar="تفصيلة مولّدة لأعمال خرسانية" data-alt-en="Generated detail of concrete works"><span class="label"><em data-ar="أعمال خرسانية" data-en="Concrete works">أعمال خرسانية</em><i dir="ltr">06</i></span></a></li>
+    </ul>
+  </section>
+
+  <!-- ============================================= E — capabilities ===== -->
+  <section class="caps" id="capabilities">
+    <div class="sec-head">
+      <p class="label sec-mark"><i aria-hidden="true"></i><span data-ar="هـ — القدرات" data-en="E — CAPABILITIES">هـ — القدرات</span></p>
+      <h2 data-reveal data-ar="ثلاث طرق للتعاقد معنا." data-en="Three ways to contract with us.">ثلاث طرق للتعاقد معنا.</h2>
+    </div>
+    <div class="caps-cols" data-reveal-group>
+      <article data-reveal>
+        <span class="caps-num" dir="ltr">01</span>
+        <h3 data-ar="المقاولات العامة" data-en="General contracting">المقاولات العامة</h3>
+        <p data-ar="تتولّى مَدار الموقع بالكامل: الأعمال الإنشائية، الواجهات، التشطيبات وتنسيق المقاولين من الباطن، حتى التسليم." data-en="Madar takes the whole site: structure, façades, finishes and subcontractor coordination, through to handover.">تتولّى مَدار الموقع بالكامل: الأعمال الإنشائية، الواجهات، التشطيبات وتنسيق المقاولين من الباطن، حتى التسليم.</p>
+        <p class="caps-when"><b class="label" data-ar="مناسب حين" data-en="SUITS">مناسب حين</b><span data-ar="يكون التصميم مكتملاً والأولوية للتنفيذ المنضبط." data-en="the design is complete and the priority is disciplined delivery.">يكون التصميم مكتملاً والأولوية للتنفيذ المنضبط.</span></p>
+      </article>
+      <article data-reveal>
+        <span class="caps-num" dir="ltr">02</span>
+        <h3 data-ar="التصميم والتنفيذ" data-en="Design &amp; build">التصميم والتنفيذ</h3>
+        <p data-ar="مسار واحد من الفكرة إلى التسليم، فتُحسم تعارضات التنفيذ والتكلفة مبكراً بدل أن تظهر في الموقع." data-en="A single path from idea to handover, so delivery and cost conflicts are settled early rather than appearing on site.">مسار واحد من الفكرة إلى التسليم، فتُحسم تعارضات التنفيذ والتكلفة مبكراً بدل أن تظهر في الموقع.</p>
+        <p class="caps-when"><b class="label" data-ar="مناسب حين" data-en="SUITS">مناسب حين</b><span data-ar="يكون البرنامج ضيقاً أو التصميم ما زال قابلاً للتطوير." data-en="the programme is tight or the design can still evolve.">يكون البرنامج ضيقاً أو التصميم ما زال قابلاً للتطوير.</span></p>
+      </article>
+      <article data-reveal>
+        <span class="caps-num" dir="ltr">03</span>
+        <h3 data-ar="التشطيبات والأنظمة" data-en="Fit-out &amp; MEP">التشطيبات والأنظمة</h3>
+        <p data-ar="تفاصيل معمارية دقيقة وتنسيق للأنظمة الكهروميكانيكية، مع اختبار وتشغيل تجريبي قبل الاستلام." data-en="Precise architectural detailing and coordinated building systems, with testing and commissioning before acceptance.">تفاصيل معمارية دقيقة وتنسيق للأنظمة الكهروميكانيكية، مع اختبار وتشغيل تجريبي قبل الاستلام.</p>
+        <p class="caps-when"><b class="label" data-ar="مناسب حين" data-en="SUITS">مناسب حين</b><span data-ar="يكون الهيكل قائماً والمطلوب جودة الاستخدام اليومي." data-en="the shell exists and what matters is everyday performance.">يكون الهيكل قائماً والمطلوب جودة الاستخدام اليومي.</span></p>
+      </article>
+    </div>
+    <p class="sec-note caps-foot" data-ar="خدمات افتراضية لتوضيح تجربة الموقع. يُؤكَّد النطاق الفعلي قبل أي استخدام إنتاجي." data-en="Illustrative services for this prototype. Actual capability must be confirmed before any production use.">خدمات افتراضية لتوضيح تجربة الموقع. يُؤكَّد النطاق الفعلي قبل أي استخدام إنتاجي.</p>
+  </section>
+
+  <!-- ================================================ F — standards ===== -->
+  <section class="standards" id="standards">
+    <div class="sec-head">
+      <p class="label sec-mark"><i aria-hidden="true"></i><span data-ar="و — المعايير" data-en="F — STANDARDS">و — المعايير</span></p>
+      <h2 data-reveal data-ar="ما يمكنك مراجعته، لا ما يمكننا ادّعاؤه." data-en="What you can review, not what we could claim.">ما يمكنك مراجعته، لا ما يمكننا ادّعاؤه.</h2>
+    </div>
+    <ol class="standard-list" data-reveal-group>
+      <li data-reveal><span class="label" dir="ltr">01</span><div><h3 data-ar="تخطيط ومراجعة مخاطر" data-en="Planning and risk review">تخطيط ومراجعة مخاطر</h3><p data-ar="تُراجع مخاطر التنفيذ والتعاقد قبل بدء الأعمال، ويُسجَّل إجراء مقابل لكل خطر." data-en="Delivery and contractual risks are reviewed before works begin, with a recorded mitigation against each.">تُراجع مخاطر التنفيذ والتعاقد قبل بدء الأعمال، ويُسجَّل إجراء مقابل لكل خطر.</p></div></li>
+      <li data-reveal><span class="label" dir="ltr">02</span><div><h3 data-ar="سلامة وفحص مواد" data-en="Safety and material inspection">سلامة وفحص مواد</h3><p data-ar="ضبط سلامة الموقع، واعتماد المواد والأعمال بفحص موثّق قبل الانتقال للمرحلة التالية." data-en="Site safety control, with materials and works approved by documented inspection before the next stage.">ضبط سلامة الموقع، واعتماد المواد والأعمال بفحص موثّق قبل الانتقال للمرحلة التالية.</p></div></li>
+      <li data-reveal><span class="label" dir="ltr">03</span><div><h3 data-ar="توثيق وتسليم" data-en="Documentation and handover">توثيق وتسليم</h3><p data-ar="مراجعات موثّقة، إغلاق للملاحظات، ومستندات تشغيل وصيانة تُسلَّم مع المبنى." data-en="Documented reviews, snag close-out, and operation and maintenance records handed over with the building.">مراجعات موثّقة، إغلاق للملاحظات، ومستندات تشغيل وصيانة تُسلَّم مع المبنى.</p></div></li>
+      <li data-reveal><span class="label" dir="ltr">04</span><div><h3 data-ar="شهادات معلنة" data-en="Declared certificates">شهادات معلنة</h3><p data-ar="في الموقع الفعلي تُعرض الشهادات باسم الجهة المانحة ونطاقها وسريانها — ولا تُعرض شارات غير متحقَّقة." data-en="On the real site, certificates would be shown with issuer, scope and validity — and no unverified badges are displayed.">في الموقع الفعلي تُعرض الشهادات باسم الجهة المانحة ونطاقها وسريانها — ولا تُعرض شارات غير متحقَّقة.</p></div></li>
+    </ol>
+  </section>
+
+  <!-- ================================================== G — contact ===== -->
+  <section class="contact" id="contact">
+    <div class="contact-side">
+      <p class="label sec-mark"><i aria-hidden="true"></i><span data-ar="ز — تواصل" data-en="G — CONTACT">ز — تواصل</span></p>
+      <h2 data-reveal data-ar="أرسل النطاق. نردّ بالأسئلة الصحيحة." data-en="Send the scope. We reply with the right questions.">أرسل النطاق. نردّ بالأسئلة الصحيحة.</h2>
+      <dl class="contact-meta">
+        <div><dt class="label" data-ar="البريد" data-en="Email">البريد</dt><dd><bdi>hello@madar.example</bdi></dd></div>
+        <div><dt class="label" data-ar="الموقع" data-en="Location">الموقع</dt><dd data-ar="مصر — تُستكمل بيانات المكتب لاحقاً" data-en="Egypt — office details to follow">مصر — تُستكمل بيانات المكتب لاحقاً</dd></div>
+        <div><dt class="label" data-ar="الرد" data-en="Response">الرد</dt><dd data-ar="خلال يومي عمل — افتراضي" data-en="Within two working days — illustrative">خلال يومي عمل — افتراضي</dd></div>
+      </dl>
+      <p class="label contact-note"><span data-ar="نموذج محلي تجريبي: لا تُرسل أو تُحفظ أي بيانات." data-en="LOCAL DEMONSTRATION FORM: NOTHING IS SENT OR STORED.">نموذج محلي تجريبي: لا تُرسل أو تُحفظ أي بيانات.</span></p>
+    </div>
+    <form data-reveal>
+      <div class="field-row">
+        <label><span class="label" data-ar="الاسم" data-en="Name">الاسم</span><input name="name" required autocomplete="name" maxlength="100"></label>
+        <label><span class="label" data-ar="الجهة" data-en="Organisation">الجهة</span><input name="company" autocomplete="organization" maxlength="120"></label>
+      </div>
+      <div class="field-row">
+        <label><span class="label" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</span><input name="email" type="email" dir="ltr" required autocomplete="email" maxlength="200"></label>
+        <label><span class="label" data-ar="القطاع" data-en="Sector">القطاع</span>
+          <select name="sector">
+            <option data-ar="مبانٍ" data-en="Buildings">مبانٍ</option>
+            <option data-ar="صناعة ولوجستيات" data-en="Industry &amp; logistics">صناعة ولوجستيات</option>
+            <option data-ar="بنية تحتية" data-en="Infrastructure">بنية تحتية</option>
+          </select>
+        </label>
+      </div>
+      <label><span class="label" data-ar="نبذة عن النطاق" data-en="Scope summary">نبذة عن النطاق</span><textarea name="brief" rows="4" required maxlength="2000"></textarea></label>
+      <div class="field-foot">
+        <small class="label" data-ar="استخدم بيانات تجريبية فقط." data-en="USE DEMONSTRATION INFORMATION ONLY.">استخدم بيانات تجريبية فقط.</small>
+        <button class="btn" type="submit"><span data-ar="محاكاة الإرسال" data-en="Simulate submission">محاكاة الإرسال</span><i aria-hidden="true">→</i></button>
+      </div>
+      <p class="form-status label" data-form-status role="status" tabindex="-1"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr-inner">
+    <a class="brand" href="../../../index.html">
+      <svg viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <path d="M3 40V17L22 3L41 17V40H29V23H15V40H3Z" stroke="currentColor" stroke-width="2.2"/>
+        <path d="M3 17H41M22 3V14" stroke="currentColor" stroke-width="2.2"/>
+      </svg>
+      <span class="brand-text"><strong>MADAR</strong><small class="label">DIRECTION F / THE MEASURE</small></span>
+    </a>
+    <nav class="ftr-nav">
+      <a href="../../../index.html"><span data-ar="كل التصاميم" data-en="All designs">كل التصاميم</span></a>
+    </nav>
+  </div>
+  <p class="ftr-bottom label">
+    <span data-ar="مَدار التجريبية © 2026 • شركة خيالية • محتوى وصور توضيحية" data-en="MADAR DEMO © 2026 • FICTIONAL COMPANY • ILLUSTRATIVE CONTENT &amp; IMAGERY">مَدار التجريبية © 2026 • شركة خيالية • محتوى وصور توضيحية</span>
+    <span dir="ltr">EXPLORATION / V.03 / DIRECTION F</span>
+  </p>
+</footer>
+
+</body>
+</html>
